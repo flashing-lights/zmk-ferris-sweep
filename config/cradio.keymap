@@ -10,7 +10,8 @@
     behaviors {
         hold_tap {
             flavor = "tap-preferred";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <225>;
+            require-prior-idle-ms = <125>;
         };
     };
     keymap {
