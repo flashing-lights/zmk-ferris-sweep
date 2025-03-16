@@ -10,8 +10,7 @@
     behaviors {
         hold_tap {
             tapping-term-ms = <300>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <275>;
         };
     };
     keymap {
