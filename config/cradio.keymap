@@ -7,15 +7,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    behaviors {
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
+    &lt {
+            tapping-term-ms = <175>;  // Adjust hold detection timing
+            quick-tap-ms = <0>;       // Ensures instant deactivation
+            flavor = "balanced";      // Prevents unintended stickiness
+    };
+    &mt {
+            tapping-term-ms = <175>;  // Adjust hold detection timing
+            quick-tap-ms = <0>;       // Ensures instant deactivation
+            flavor = "balanced";      // Prevents unintended stickiness
     };
     keymap {
         compatible = "zmk,keymap";
@@ -23,9 +23,9 @@
         layer_0 {
             bindings = <
 &kp Q             &kp W        &kp E           &kp R      &kp T       &kp Y        &kp U      &kp I                &kp O             &kp P
-&bhm LEFT_SHIFT A &bhm 5 S      &bhm 2 D         &bhm 3 F    &kp G       &kp H        &bhm 4 J    &bhm 1 K              &bhm 6 L          &bhm RIGHT_SHIFT LS(SEMICOLON)
+&mt LEFT_SHIFT A &lt 5 S      &lt 2 D         &lt 3 F    &kp G       &kp H        &lt 4 J    &lt 1 K              &lt 6 L          &mt RIGHT_SHIFT LS(SEMICOLON)
 &kp Z             &mt LCTRL X  &mt LEFT_ALT C  &kp V      &kp B       &kp N        &kp M      &mt RIGHT_ALT COMMA  &mt RCTRL PERIOD  &kp FSLH
-                                               &kp LSHFT  &kp BSPC    &bhm 7 SPACE  &kp LSHFT
+                                               &kp LSHFT  &kp BSPC    &lt 7 SPACE  &kp LSHFT
             >;
         };
 
