@@ -9,8 +9,8 @@
 / {
     behaviors {
         hold_tap {
-            tapping-term-ms = <300>;
-            require-prior-idle-ms = <275>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
         };
     };
     keymap {
