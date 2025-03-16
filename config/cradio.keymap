@@ -7,6 +7,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+behaviors {
     &lt {
             tapping-term-ms = <175>;  // Adjust hold detection timing
             quick-tap-ms = <0>;       // Ensures instant deactivation
@@ -16,6 +17,7 @@
             tapping-term-ms = <175>;  // Adjust hold detection timing
             quick-tap-ms = <0>;       // Ensures instant deactivation
             flavor = "balanced";      // Prevents unintended stickiness
+    };
     };
     keymap {
         compatible = "zmk,keymap";
