@@ -9,8 +9,7 @@
 / {
     behaviors {
         hold_tap {
-            tapping-term-ms = <175>;  // Adjust hold detection timing
-            quick-tap-ms = <0>;       // Ensures instant deactivation
+            tapping-term-ms = <250>;  // Adjust hold detection timing
             flavor = "balanced";      // Prevents unintended stickiness
         };
     };
