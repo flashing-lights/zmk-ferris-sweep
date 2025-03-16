@@ -9,8 +9,9 @@
 / {
     behaviors {
         hold_tap {
-            tapping-term-ms = <250>;  // Adjust hold detection timing
-            flavor = "balanced";      // Prevents unintended stickiness
+            tapping-term-ms = <300>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <175>;
         };
     };
     keymap {
