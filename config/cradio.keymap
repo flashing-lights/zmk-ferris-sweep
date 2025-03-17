@@ -11,7 +11,7 @@
         hold_tap {
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <200>;
         };
     };
     keymap {
