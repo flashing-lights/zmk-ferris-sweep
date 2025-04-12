@@ -1,3 +1,4 @@
+
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
@@ -95,10 +96,10 @@
 
         ext_layer {
             bindings = <
-&kp N0          &kp DOLLAR        &kp TAB       &kp ESCAPE  &trans          &kp PG_UP      &kp PG_DN          &kp HOME       &kp END            &kp CAPS
-&sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &kp ENTER   &kp LEFT_WIN    &kp LEFT       &kp DOWN           &kp UP         &kp RIGHT          &kp DEL
-&kp LC(Z)       &kp LC(X)         &kp LC(C)     &kp LC(V)   &trans          &trans         &kp LC(BACKSPACE)  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT
-                                                &trans      &trans          &kp BACKSPACE  &trans
+&kp N0          &kp DOLLAR        &kp TAB       &kp ESCAPE  &kp LEFT_COMMAND    &kp LC(Z)          &kp LC(X)          &kp LC(C)      &kp LC(V)          &kp CAPS
+&sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &kp ENTER   &sk LEFT_COMMAND    &kp LEFT           &kp DOWN           &kp UP         &kp RIGHT          &kp DEL
+&kp LG(Z)       &kp LG(X)         &kp LG(C)     &kp LG(V)   &trans              &kp LC(BACKSPACE)  &kp LA(BACKSPACE)  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT
+                                                &trans      &trans              &kp BACKSPACE      &trans
             >;
         };
 
@@ -156,3 +157,4 @@
         };
     };
 };
+
